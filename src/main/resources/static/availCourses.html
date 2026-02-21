@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Courses - NeuroSpark Academy</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="availCoursesStyle.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">⚡ NeuroSpark</div>
+        <div class="nav-links-top">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="availCourses.html" class="nav-item active">Courses</a>
+            <a href="enrolled.html" class="nav-item">Students</a>
+            <a href="register.html" class="nav-item btn-small">Enroll</a>
+        </div>
+    </nav>
+    <!-- Animated Background Shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="heading-section">
+            <h1 class="page-title">Available Courses</h1>
+            <p class="subtitle">Explore our industry-ready programs designed to shape your future.</p>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Trainer Name</th>
+                        <th>Course Duration(Weeks)</th>
+                    </tr>
+                </thead>
+                <tbody id="courseTable">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="register.html" class="nav-btn"><i class="fa-solid fa-user-plus"></i> Register a Course</a>
+            <a href="enrolled.html" class="nav-btn"><i class="fa-solid fa-user-graduate"></i> Enrolled Students</a>
+        </div>
+    </div>
+
+
+    <script>
+        window.onload = function () {
+            showCourses();
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
