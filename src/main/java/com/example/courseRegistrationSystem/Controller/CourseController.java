@@ -1,8 +1,8 @@
-package com.example.courseRegistrationSystem.controller;
+package com.example.courseRegistrationSystem.Controller;
 
-import com.example.courseRegistrationSystem.model.Course;
-import com.example.courseRegistrationSystem.model.CourseRegistry;
-import com.example.courseRegistrationSystem.service.CourseService;
+import com.example.courseRegistrationSystem.Entity.Course;
+import com.example.courseRegistrationSystem.Entity.User;
+import com.example.courseRegistrationSystem.Service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +23,7 @@ public class CourseController {
 
 
     @GetMapping("/getEnrolledStudents")
-    public List<CourseRegistry> enrolledStudents(){
+    public List<User> enrolledStudents(){
         return courseService.getEnrolledStudents();
     }
 
